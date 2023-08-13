@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "abc579fa-5db2-4994-be21-968deee26126",
+		"name": "picture guitar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26052940"
+	},
+	"item": [
+		{
+			"name": "Get All Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Post Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Product 2",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/62851/OneDrive/Gambar/264945949_928129777830759_2205815545811708222_n.jpg"
+						}
+					]
+				},
+				"url": "http://localhost:5000/products"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:5000/products/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "product pertama",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/62851/OneDrive/Gambar/Saved Pictures/logo ksatria.png"
+						}
+					]
+				},
+				"url": "http://localhost:5000/products/1"
+			},
+			"response": []
+		}
+	]
+}
